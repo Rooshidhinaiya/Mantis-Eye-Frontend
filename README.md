@@ -22,7 +22,7 @@ Seperate Zoom-in and Zoom-out Button for zoom the content
 
 
 (Click on Below link to visualize live app)
-Hosting Links:- https://mantis-eye-assesment-subhajit889.vercel.app/
+Hosting Link:- https://rz7hkc-3000.csb.app/
 
 
 
