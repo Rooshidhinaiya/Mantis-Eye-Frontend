@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.tree-node {
+  margin: 5%;
+  cursor: pointer;
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    conic-gradient(grey,black,grey);
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+}
+
+.zoom-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.zoom-buttons button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.zoom-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.zoom-buttons button:active {
+  transform: scale(0.95);
+}
+
+.Total {
+  border: 1px solid #db5050;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f9f9f9;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  background: #121FCF;
+  background: linear-gradient(to right, #121FCF 26%, #CF0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.designation-title {
+  font-size: 16px;
+  margin: 0;
+  color: #2363c4;
+}
+
+.email-address {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+
+.employee-count {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #888;
+}
+
+.tree-node-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+  color: #666;
+}
+
+.tree-line {
+  border-left: 1px solid #ccc;
+  margin-left: 5px;
+  height: 20px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.tree-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.expand-text {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tree-node:hover .expand-text {
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tree-node {
+    margin: 2%;
+  }
+
+  .heading {
+    font-size: 40px;
+    margin: 10px;
+  }
+}
